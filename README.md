@@ -1,5 +1,40 @@
-# Betania Adane · Personal Website
+# Betania Adane
 
-Portfolio site — [betaniacs.github.io](https://betaniacs.github.io/).
+Personal site for **Betania Adane**, CS student at Stanford on the Artificial Intelligence track.
 
----
+**Live site:** [betaniacs.github.io](https://betaniacs.github.io/)
+
+## Files
+
+| File | Role |
+| --- | --- |
+| `index.html` | Page structure |
+| `styles.css` | Layout and theme |
+| `app.js` | Experience, projects, skills, and interactions |
+| `betania.jpg` | Hero photo |
+
+## Run locally
+
+From this folder:
+
+```bash
+python3 -m http.server 8765
+```
+
+Then open [http://127.0.0.1:8765](http://127.0.0.1:8765).
+
+## Publish
+
+This repo is a GitHub Pages user site (`betaniacs.github.io`). Pushing to `main` updates the live site.
+
+```bash
+git add index.html styles.css app.js betania.jpg README.md
+git commit -m "Update site"
+git push origin main
+```
+
+## Contact
+
+- Email: [betania1@stanford.edu](mailto:betania1@stanford.edu)
+- GitHub: [github.com/betaniacs](https://github.com/betaniacs)
+- LinkedIn: [linkedin.com/in/betania-adane](https://linkedin.com/in/betania-adane)
