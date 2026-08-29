@@ -1,234 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Betania Adane | Computer Science @ Stanford</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Betania Adane — Stanford CS, AI Track</title>
+<meta name="description" content="Betania Adane — Stanford CS student on the AI track. ML, full-stack products, and responsible AI research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#publication">Publication</a>
-      <a href="#skills">Skills</a>
-      <a href="#awards">Awards</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="hero__text">
-        <p class="eyebrow large">Computer Science @ Stanford University</p>
-        <h1>Hi, I'm Betania.</h1>
-        <p class="lede large">Obbessed with building and shipping technical products.</p>
-        <div class="hero__actions">
-          <a class="btn ghost" href="#experience">See experience</a>
-        </div>
-      </div>
-    </section>
+<canvas id="netCanvas"></canvas>
 
-    <section id="about" class="section">
-      <div class="section__header">
-        <p class="eyebrow">About</p>
-        <h2>About me</h2>
-      </div>
-      <p class="body">I'm a computer science student at Stanford University on the AI track.</p>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="section__header">
-        <p class="eyebrow">Experience</p>
-        <h2>Experience</h2>
-      </div>
-      <div class="cards-grid">
-        <div class="card">
-          <div class="card__header">
-            <div>
-              <h3>Bootcamp Fellow · Co-founder, TreeTrade</h3>
-              <p class="muted">Affiliated Stanford Entrepreneurial Students (ASES) · Oct 2025 — Present</p>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Selected as 1 of 30 fellows from 500+ applicants for Stanford's premier entrepreneurship bootcamp.</li>
-            <li>Co-founded TreeTrade, a marketplace for Stanford students to trade goods, services, and skills; launched to 100+ active users.</li>
-            <li>Led product research and build with TypeScript, React, and Supabase.</li>
-          </ul>
-          <div class="skillset"><span>TypeScript</span><span>React</span><span>Supabase</span></div>
-          <a class="btn primary spaced" href="https://treetrade.org/browse" target="_blank" rel="noopener noreferrer">View TreeTrade</a>
-        </div>
-
-        <div class="card">
-          <div class="card__header">
-            <div>
-              <h3>Data Science & Statistics Intern</h3>
-              <p class="muted">FDA · Center for Drug Evaluation Research · Mar 2024 — Dec 2024</p>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Identified covariates for individualized dose prediction using LightGBM, XGBoost, CatBoost, and CNNs.</li>
-            <li>Built models in Python and R; visualized findings for clinical review.</li>
-          </ul>
-          <div class="skillset"><span>Python</span><span>R</span><span>NumPy</span><span>PyTorch</span><span>Pandas</span><span>Matplotlib</span><span>Deep Learning</span><span>Excel</span></div>
-        </div>
-
-        <div class="card">
-          <div class="card__header">
-            <div>
-              <h3>Artificial Intelligence & Software Engineer Intern</h3>
-              <p class="muted">IpserLab LLC · Sep 2024 — May 2025</p>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Built an AI recommendation system for e-commerce, boosting responsiveness by ~20% using K-Means and collaborative filtering.</li>
-            <li>Co-founded an AI travel companion for marginalized travelers; led AI integration strategy.</li>
-          </ul>
-          <div class="skillset"><span>Python</span><span>NumPy</span><span>Pandas</span><span>Java</span><span>Excel</span><span>ReactJS</span></div>
-        </div>
-
-        <div class="card">
-          <div class="card__header">
-            <div>
-              <h3>Machine Learning Student Researcher</h3>
-              <p class="muted">Harvard Undergraduate OpenBio Laboratory · Jun 2024 — Aug 2024</p>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Developed AI for biomarker discovery using XGBoost, neural networks, random forest, and logistic regression.</li>
-            <li>Achieved 96% accuracy and AUC-ROC for early ovarian cancer detection, surpassing traditional baselines.</li>
-            <li>Applied SHAP for model explainability, clarifying feature importance for clinicians.</li>
-          </ul>
-          <div class="skillset"><span>Python</span><span>Pandas</span><span>TensorFlow</span><span>scikit-learn</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section__header">
-        <p class="eyebrow">Projects</p>
-        <h2>Personal projects</h2>
-      </div>
-      <div class="cards-grid">
-        <div class="card">
-          <div class="card__header">
-            <div>
-              <h3>Independent ML research</h3>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Built synthetic data pipelines and a CNN for image-based ovarian cancer subtype classification.</li>
-            <li>Improved test accuracy by 12% and explained model behavior with SHAP.</li>
-          </ul>
-          <div class="skillset"><span>Python</span><span>TensorFlow</span><span>scikit-learn</span></div>
-        </div>
-
-        <div class="card">
-          <div class="card__header">
-            <div>
-              <h3>Paperify</h3>
-            </div>
-          </div>
-          <ul class="list">
-            <li>Built a Flask + Hugging Face app to summarize academic PDFs in real time.</li>
-            <li>Used Sentence-BERT embeddings for semantic similarity and concise outputs.</li>
-          </ul>
-          <div class="skillset"><span>Python</span><span>Flask</span><span>HTML/CSS/JS</span></div>
-          <a class="btn secondary" href="https://github.com/betaniacs/Paperify" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="section__header">
-        <p class="eyebrow">Skills</p>
-        <h2>Languages & libraries</h2>
-      </div>
-      <div class="pill-grid">
-        <span class="pill">Python</span><span class="pill">Java</span><span class="pill">C++</span><span class="pill">JavaScript</span><span class="pill">TypeScript</span><span class="pill">HTML/CSS</span><span class="pill">TensorFlow</span><span class="pill">PyTorch</span><span class="pill">Keras</span><span class="pill">scikit-learn</span><span class="pill">Pandas</span><span class="pill">NumPy</span><span class="pill">Flask</span><span class="pill">Supabase</span>
-      </div>
-    </section>
-
-    <section id="awards" class="section">
-      <div class="section__header">
-        <p class="eyebrow">Awards</p>
-        <h2>Recognition</h2>
-      </div>
-      <div class="cards-grid">
-        <div class="card"><h3>NSBE Future Innovators Award</h3></div>
-        <div class="card"><h3>NCWIT Aspirations in Computing · Honorable Mention</h3></div>
-        <div class="card"><h3>Ron Brown Scholar Captain</h3></div>
-        <div class="card"><h3>George H.W. Bush Points of Light Award</h3></div>
-      </div>
-    </section>
-
-    <section id="publication" class="section">
-      <div class="section__header">
-        <p class="eyebrow">Publication</p>
-        <h2>Publication</h2>
-      </div>
-      <div class="card publication">
-        <div>
-          <p class="muted">Fall 2024 · Harvard Undergraduate OpenBio Laboratory</p>
-          <h3>Identifying Biomarkers for Early Detection of Ovarian Cancer Using SHAP Analysis</h3>
-        </div>
-        <div class="pub-actions">
-          <a class="btn primary" href="http://www.theyoungresearcher.com/papers/TYR_SRI_2024.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="section__header">
-        <p class="eyebrow">Contact</p>
-        <h2>Let's build together</h2>
-      </div>
-      <div class="card contact-card">
-        <div>
-          <h3>Reach out</h3>
-          <p class="muted">Feel free to email me betania1[at]stanford[dot]edu.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="btn primary" href="https://www.linkedin.com/in/betania-adane-391a5725b/" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-            LinkedIn
-          </a>
-          <span class="muted">Based in Stanford, CA</span>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div>
-      <div class="logo">BA</div>
+<!-- ============ NAV ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="#top" class="logo">Betania Adane</a>
+      <nav class="nav-links mono" aria-label="Jump to section">
+        <a href="#experience">Experience</a>
+        <a href="#publication">Research</a>
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <div class="footer__links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="http://www.theyoungresearcher.com/papers/TYR_SRI_2024.pdf" target="_blank" rel="noopener noreferrer">Publication</a>
-      <a href="https://github.com/betaniacs" target="_blank" rel="noopener noreferrer" class="footer__link-icon">
-        <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-        </svg>
-        GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/betania-adane-391a5725b/" target="_blank" rel="noopener noreferrer" class="footer__link-icon">
-        <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-        </svg>
-        LinkedIn
-      </a>
-      <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div id="glowLayer"></div>
+  <div class="hero-inner">
+    <div class="hero-left reveal">
+      <h1 class="hero-name">Hey, I'm Betania</h1>
+      <p class="hero-role mono">Stanford&nbsp;CS · Artificial&nbsp;Intelligence&nbsp;Track</p>
+      <p class="hero-rotate mono">currently: <span class="rot-word" id="rotWord">developing</span></p>
+
+      <div class="hero-bio" id="about">
+        <p>
+          I'm a Computer Science major on the <b>Artificial Intelligence Track</b> at Stanford.
+          I work across <b>machine learning</b>, <b>full&#8209;stack product</b>, <b>SWE</b>,
+          <b>responsible AI</b> and <b>ethics</b>.
+        </p>
+        <p>
+          I've built drug&#8209;clearance models at the FDA, published research at Harvard,
+          and worked on the iOS team at Level 3 AI.
+        </p>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">View my experience</a>
+        <a href="#work" class="btn btn-primary">View my projects</a>
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+      </div>
     </div>
-  </footer>
+
+    <div class="hero-right reveal reveal-delay-1">
+      <div class="hero-photo-frame">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="betania.jpg" alt="Betania Adane" width="640" height="800">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue mono">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="edu-section" id="education">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow mono">/ education</span>
+      <h2>Currently at Stanford</h2>
+    </div>
+    <div class="edu-card glass reveal">
+      <div class="t-role">Stanford University</div>
+      <div class="t-org">B.S. Computer Science, Artificial Intelligence Track</div>
+      <div class="t-desc">Stanford, CA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE TIMELINE ============ -->
+<section class="timeline-section" id="experience">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow mono">/ experience</span>
+      <h2>Where I've spent my time</h2>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATION ============ -->
+<section class="pub-section" id="publication">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow mono">/ research</span>
+      <h2>Research</h2>
+    </div>
+    <article class="pub-card glass reveal">
+      <div class="t-period mono">Fall 2024 · Harvard Undergraduate OpenBio Laboratory</div>
+      <h3>Identifying Biomarkers for Early Detection of Ovarian Cancer Using SHAP Analysis</h3>
+      <p class="pub-venue">The Young Researcher, Vol. 8 No. 2</p>
+      <a class="post-link" href="http://www.theyoungresearcher.com/papers/TYR_SRI_2024.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ FEED ============ -->
+<section class="feed-section" id="work">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow mono">/ projects</span>
+      <h2>Projects</h2>
+    </div>
+    <div class="feed-filters mono" id="feedFilters"></div>
+    <div class="feed-grid" id="feedGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills-section" id="skills">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="eyebrow mono">/ skills</span>
+      <h2>Skills</h2>
+    </div>
+    <div id="skillsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact-section" id="contact">
+  <div class="section-inner">
+    <div class="contact-card glass reveal">
+      <span class="eyebrow mono">/ contact</span>
+      <p class="contact-lead">I'm always excited to connect, explore new opportunities, and have interesting conversations.</p>
+      <div class="contact-cta">
+        <a href="mailto:betania1@stanford.edu" class="btn btn-primary btn-lg">Email me →</a>
+      </div>
+      <div class="contact-links mono">
+        <a href="mailto:betania1@stanford.edu">betania1@stanford.edu</a>
+        <a href="https://github.com/betaniacs" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/betania-adane" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <span class="mono">© 2026 Betania Adane — built with curiosity.</span>
+    <span class="mono">Designed &amp; coded from scratch.</span>
+  </div>
+</footer>
+
+<!-- ============ MODALS ============ -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-panel project-panel" id="projectModalPanel"></div>
+</div>
+
+<!-- ============ STORY VIEWER (fullscreen, IG-style) ============ -->
+<div class="story-viewer" id="storyViewer">
+  <div class="story-stage" id="storyStage">
+    <div class="story-progress" id="storyProgress"></div>
+    <div class="story-head">
+      <span class="sh-icon" id="storyHeadIcon"></span>
+      <span class="sh-label" id="storyHeadLabel"></span>
+    </div>
+    <button class="story-close" id="storyClose">&times;</button>
+    <div class="story-tap-zone left" id="storyPrev"></div>
+    <div class="story-tap-zone right" id="storyNext"></div>
+    <div id="storySlideContent"></div>
+  </div>
+</div>
+
+<!-- ============ VIBE SWITCHER ============ -->
+<div class="vibe-tooltip mono" id="vibeTooltip">theme</div>
+<button class="vibe-btn" id="vibeBtn" title="Theme" aria-label="Switch theme">
+  <span class="vibe-swatches" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</button>
+
+<canvas id="confettiCanvas"></canvas>
+<div class="egg-toast mono" id="eggToast"></div>
+
+<script src="app.js"></script>
 </body>
 </html>
