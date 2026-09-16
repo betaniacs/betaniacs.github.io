@@ -339,6 +339,10 @@ const projects = [
     desc:'Building an AI-powered networking platform that uses ML and behavioral insights to create meaningful, high-probability connections.',
     stack:['Python','FastAPI','scikit-learn'],
     href:'https://github.com/betaniacs/BetterLink' },
+  { id:'learnfrommusic', title:'LearnFromMusic',
+    desc:'Making language learning more fun and accessible through technology by helping users learn languages through music.',
+    stack:['React','Vite','Express.js','SQLite','Zod','Docker','Claude','Groq'],
+    href:'https://github.com/betaniacs/LearnFromMusic' },
 ];
 
 const feedGrid = document.getElementById('feedGrid');
