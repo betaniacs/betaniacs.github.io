@@ -327,6 +327,10 @@ storyViewer.addEventListener('click', (e) => { if (e.target === storyViewer) clo
    FEED / PROJECTS DATA
 ============================================================ */
 const projects = [
+  { id:'learnfrommusic', title:'LearnFromMusic',
+    desc:'Making language learning more fun and accessible through technology by helping users learn languages through music.',
+    stack:['React','Vite','Express.js','SQLite','Zod','Docker','Claude','Groq'],
+    href:'https://github.com/betaniacs/LearnFromMusic' },
   { id:'fer-fairness', title:'FER Fairness via Diffusion-Based Augmentation',
     desc:'Improved ResNet-18 fairness in facial emotion recognition by augmenting training data with Stable Diffusion XL-generated faces.',
     stack:['Python','PyTorch','HuggingFace Diffusers','OpenCV'],
@@ -339,10 +343,6 @@ const projects = [
     desc:'Building an AI-powered networking platform that uses ML and behavioral insights to create meaningful, high-probability connections.',
     stack:['Python','FastAPI','scikit-learn'],
     href:'https://github.com/betaniacs/BetterLink' },
-  { id:'learnfrommusic', title:'LearnFromMusic',
-    desc:'Making language learning more fun and accessible through technology by helping users learn languages through music.',
-    stack:['React','Vite','Express.js','SQLite','Zod','Docker','Claude','Groq'],
-    href:'https://github.com/betaniacs/LearnFromMusic' },
 ];
 
 const feedGrid = document.getElementById('feedGrid');
